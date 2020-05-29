@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>week 2 project.</title>
+    </head>
+    <style>
+        body {
+            background-color:chartreuse;
+            text-align: justify;
+        }
+        form {
+            background-color: darkblue;
+            text-align:justify;
+        }
+    </style>
+    <script>
+    $(document).ready (function('event') {
+        $("authentiate").submit(function(){
+            alert('submitted')
+        })
+    })
+    </script>
+
+    <body>
+        <h4><strong><em>explanation</em></strong></h4>
+        <p>this page allows you to know what your aakan name is according to the day of the wek you were born in.
+            for this to happen, you have to fill in some detail first like your gender and date of birth. gender because aakan names are given to their gender as no female can have a male aakan name and vice versa date of birth because it shall provide the day of the week you were born in.  </p>
+
+            <form>
+                ​<label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"><br>
+               
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <input type="submit"> 
+            </form>
+    </body>
+</html>
